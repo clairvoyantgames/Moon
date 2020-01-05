@@ -19,10 +19,10 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        goLeft = Input.GetKey(KeyCode.A);
-        goRight = Input.GetKey(KeyCode.D);
-        goUp = Input.GetKey(KeyCode.LeftArrow);
-        goDown = Input.GetKey(KeyCode.RightArrow);
+        goUp = Input.GetKey(KeyCode.A);
+        goDown = Input.GetKey(KeyCode.D);
+        goLeft = Input.GetKey(KeyCode.LeftArrow);
+        goRight = Input.GetKey(KeyCode.RightArrow);
         action1 = Input.GetKeyDown(KeyCode.Space);
         action2 = Input.GetKeyDown(KeyCode.Backspace);
     }

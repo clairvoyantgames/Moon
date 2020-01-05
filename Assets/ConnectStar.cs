@@ -16,7 +16,6 @@ public class ConnectStar : MonoBehaviour
     {
         if(otherStar != null)
         {
-            Debug.Log("connect");
             Debug.DrawLine(transform.position, otherStar.transform.position);
         }
     }
