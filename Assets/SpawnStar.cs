@@ -18,7 +18,7 @@ public class SpawnStar : MonoBehaviour
         Controller = FindObjectOfType<Controller>();
 
         sky = GameObject.Find("sky origin");
-        star = GameObject.Find("star");
+        star = GameObject.Find("star origin");
     }
 
     // Update is called once per frame

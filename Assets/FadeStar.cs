@@ -24,7 +24,6 @@ public class FadeStar : MonoBehaviour
         toColor = 1f;
 
         sky = GameObject.Find("sky origin");
-        star = GameObject.Find("star");
     }
 
     // Update is called once per frame
