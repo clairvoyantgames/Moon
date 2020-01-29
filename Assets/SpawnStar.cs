@@ -54,7 +54,7 @@ public class SpawnStar : MonoBehaviour
                     }
                     else
                     {
-                        con.GetComponent<ConnectStar>().otherStar = lastStar;
+                        con.GetComponent<ConnectStar>().shineStar = lastStar;
                         lastStar = con;
                     }
                 }

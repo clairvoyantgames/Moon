@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConnectStar : MonoBehaviour
 {
-    public GameObject otherStar = null;
+    public GameObject shineStar = null;
     private GameObject shine;
     private GameObject currentShine = null;
     private bool shined = false;
@@ -18,14 +18,14 @@ public class ConnectStar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(otherStar != null && !shined)
+        if(shineStar != null && !shined)
         {
             shined = true;
             currentShine = Instantiate(shine);
             var point = currentShine.GetComponent<ShinePointAt>();
-            point.star = gameObject;
-            currentShine.transform.parent = otherStar.transform;
-            currentShine.transform.position = otherStar.transform.position;
+            point.otherStar = gameObject;
+            currentShine.transform.parent = shineStar.transform;
+            currentShine.transform.position = shineStar.transform.position;            
         }
     }
 }
